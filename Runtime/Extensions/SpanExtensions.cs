@@ -1,5 +1,6 @@
 ﻿// #if COMPILERSERVICES_UNSAFE
 
+#if UNITY_EDITOR
 using System;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
@@ -97,3 +98,4 @@ namespace SolidUtilities
 	}
 }
 // #endif
+#endif
