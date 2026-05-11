@@ -41,7 +41,7 @@ namespace SolidUtilities
 				_span = span;
 				_separator = separator;
 				Current = default;
-				_trailingEmptyItemSentinel = Unsafe.As<T[]>(nameof(_trailingEmptyItemSentinel)).AsSpan();
+				_trailingEmptyItemSentinel = new T[1];
 
 				if (_span.IsEmpty)
 					TrailingEmptyItem = true;
